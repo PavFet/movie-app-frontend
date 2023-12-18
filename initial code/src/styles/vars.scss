@@ -1,0 +1,17 @@
+//colors 
+$yellow: #F5C518;
+$yellow--darker: #b49114;
+$error: rgb(184, 10, 10);
+
+
+//anim
+
+@keyframes showUpAnim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

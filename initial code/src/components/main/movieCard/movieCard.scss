@@ -1,0 +1,95 @@
+@import '../../../styles/vars.scss';
+
+
+
+.movie__card {
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+
+  animation: showUpAnim 1s normal;
+  .movie__poster {
+    z-index: 100;
+    img {
+    width: 150px;
+    height: 200px;
+    
+    }
+  }
+}
+
+.movie__title {
+  color: white;
+}
+
+.movie__duration__genre {
+  color: white;
+  font-size: 10px;
+}
+
+.movie__rating {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.star__block {
+  height: 100%;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: transparent !important;
+  -webkit-background-clip: text !important; 
+}
+
+.movie__actors {
+  color: white;
+  font-size: 15px;
+}
+
+.movie__plot {
+  padding-top: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+
+.movie__disc__expansion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+
+  button {
+    background-color: inherit;
+    color: $yellow;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  
+}
+
+.animation--showUp {
+  animation: showUpAnim 1s normal;
+}
+
+// @keyframes arrowAnim {
+//   from {
+//     transform: rotate(0deg);
+//   }
+
+//   to {
+//     transform: rotate(180deg);
+//   }
+// }
+
+.arrow--up {
+  transform: rotate(180deg);
+  transition: transform 1s normal;
+}
+
+.arrow--down {
+  transform: rotate(360deg);
+  transition: transform 1s normal;
+}
